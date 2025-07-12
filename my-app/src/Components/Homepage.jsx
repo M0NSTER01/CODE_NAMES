@@ -30,7 +30,7 @@ function Homepage() {
             console.log("Invalid username");
             return;
         }
-        let url = `https://khhpmfpb-3000.inc1.devtunnels.ms/create-room?name=${username}`;
+        let url = `Your server Socket or Local Host url/create-room?name=${username}`;
         axios.get(url)
         .then((response)=>{
             console.log(response);

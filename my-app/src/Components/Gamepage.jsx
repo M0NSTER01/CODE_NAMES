@@ -123,7 +123,7 @@ function Gamepage() {
 
     useEffect(() => {
         if (!socketRef.current) {
-            socketRef.current = io("https://khhpmfpb-3000.inc1.devtunnels.ms");
+            socketRef.current = io("Your server Socket or Local Host url");
             socketRef.current.emit("joinRoom", { roomId: roomid, username, role });
         }
 

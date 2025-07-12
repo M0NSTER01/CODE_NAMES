@@ -23,7 +23,6 @@ let con = mysql2.createPool({
 
 
 
-// Route to create a new room (optional)
 app.get("/create-room", async (req, res) => {
     console.log("request received for creating server")
     console.log(req.query.name);
