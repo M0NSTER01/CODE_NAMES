@@ -1,0 +1,69 @@
+.gamescreen2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.fullscreen{
+    display: flex;
+    width: inherit;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.entrywindow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("/fullscreen.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    color: black;
+    padding: 20px;
+    box-shadow: 2px 2px 75px black, -2px -2px 75px black;
+}
+
+.bottomshadow{
+    box-shadow: 0px 2px black;
+}
+
+.homehead{
+    margin: 0px 0px 10px 0px;
+}
+
+.jbe{
+    margin: 10px 0px 0px 0px;
+    font-size: large;
+    font-weight: 500;
+}
+
+.homeentry{
+    background-color: white;
+    width: 35%;
+    height: 8vh;
+    max-height: 35px;
+    border: 3px solid #3D62B0;
+    border-radius: 20px;
+    padding: 0px 15px;
+    margin-bottom: 5px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+}
+
+.roundbutton{
+    border-radius: 20px;
+}
+
+.nbm{
+    margin-bottom: 0px;
+}
