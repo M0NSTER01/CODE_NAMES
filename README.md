@@ -58,3 +58,53 @@ npm start
 cd backend
 npm install
 node index.js
+
+```
+---
+
+## 🔧 Configuration Note
+
+To connect your frontend to the backend server, you **must host your backend (port 3000)** using a tunneling service like:
+
+- [Ngrok](https://ngrok.com/)
+- [Localhost.run](https://localhost.run/)
+- [VS Code Dev Tunnels](https://learn.microsoft.com/en-us/visualstudio/dev-tunnels/)
+
+Then, update the URLs in the frontend files as follows:
+
+---
+
+### 🗂️ Replace the following
+
+## 📍 In `Gamepage.jsx`:
+```js
+socketRef.current = io("Your server socket or localhost URL");
+```
+## 📍 In Homepage.jsx:
+```js
+let url = `Your server socket or localhost URL/create-room?name=${username}`;
+```
+## 📍 In Homepage.jsx:
+```js[
+let url = `Your server socket or localhost URL/create-room?name=${username}`;](https://your-tunnel-url.ngrok.io)
+```
+
+---
+
+## 🌐 Deployment Tip
+After setup:
+
+Host your frontend (React app) using platforms like Netlify, Vercel, or GitHub Pages.
+
+Ensure your backend tunnel is active and accessible.
+
+Share your frontend link with friends — and play together in real-time!
+
+---
+
+## ⚠️ Visibility Warning
+🟡 Important:
+If you're using GitHub, make sure your port visibility is set to Public — otherwise, live multiplayer may not work properly due to CORS or server restrictions.
+
+
+
